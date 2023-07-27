@@ -1,0 +1,26 @@
+To Do List 
+
+UI/UX side:
+    Figure out the navigation bar issue
+    Figure out how to create multiple pages for different projects.
+    Consider a good layout for all these projects
+
+Visuals:
+    Create visuals for Culpepper Stuffs/ Talk about what can I put 
+    Create visuals for 2.007
+    Recrop pictures, colortoning (figure out project page first)...
+
+Project listings:
+    Atomionics: Active Vibration Control
+    Atomionics: Cooling Laser module
+    MIT Age: Footwear design/sketches and idea generation
+    Personal: Spinning hologram
+    Culpepper: Compliant systems modeling and implementation on micro-scale fastening systems in mechanical watches
+    NCU (Taiwan): Invar laser cell and laser system modeling
+    Design: Light with two sides
+    Design: Souveniers
+    2.007 Robot
+    Choordinate
+    Amplify
+    Misc Art: Polaroid, rabbit, folding, mural, paintings
+    
