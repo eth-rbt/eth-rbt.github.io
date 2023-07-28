@@ -1,7 +1,8 @@
 To Do List 
 
 UI/UX side:
-    Figure out the navigation bar issue
+    Figure out the navigation bar issue (like a js file for navbar?)
+    Why is it not secure its so fuking secure
     Figure out how to create multiple pages for different projects.
     Consider a good layout for all these projects
 
@@ -20,7 +21,6 @@ Project listings:
     Design: Light with two sides
     Design: Souveniers
     2.007 Robot
-    Choordinate
-    Amplify
+    MakeMIT: Choordinate/Amplify (make visual?)
     Misc Art: Polaroid, rabbit, folding, mural, paintings
     
