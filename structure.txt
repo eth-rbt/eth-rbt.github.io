@@ -1,11 +1,11 @@
 To Do List 
 
 UI/UX side:
-    Figure out the navigation bar issue (like a js file for navbar?)
     Why is it not secure its so fuking secure
     Figure out how to create multiple pages for different projects.
     Consider a good layout for all these projects
-
+    Color not changing for nav bar ... sad
+    
 Visuals:
     Create visuals for Culpepper Stuffs/ Talk about what can I put 
     Create visuals for 2.007

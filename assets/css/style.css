@@ -383,6 +383,7 @@ h6,
 
 /* Custom Navbar */
 .custom-navbar {
+  background:#777777 !important;
   padding-top: 50px;
   width: 100%;
 }
@@ -395,6 +396,7 @@ h6,
 }
 
 .custom-navbar .navbar-brand {
+  background:#777777 !important;
   font-size: 1.7rem;
 }
 
