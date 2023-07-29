@@ -3,24 +3,24 @@ To Do List
 UI/UX side:
     Why is it not secure its so fuking secure
     Figure out how to create multiple pages for different projects.
+    -> make a template
     Consider a good layout for all these projects
-    Color not changing for nav bar ... sad
-    
+
 Visuals:
     Create visuals for Culpepper Stuffs/ Talk about what can I put 
     Create visuals for 2.007
     Recrop pictures, colortoning (figure out project page first)...
 
 Project listings:
-    Atomionics: Active Vibration Control
-    Atomionics: Cooling Laser module
-    MIT Age: Footwear design/sketches and idea generation
-    Personal: Spinning hologram
-    Culpepper: Compliant systems modeling and implementation on micro-scale fastening systems in mechanical watches
-    NCU (Taiwan): Invar laser cell and laser system modeling
-    Design: Light with two sides
-    Design: Souveniers
-    2.007 Robot
-    MakeMIT: Choordinate/Amplify (make visual?)
-    Misc Art: Polaroid, rabbit, folding, mural, paintings
+    (actvib) Atomionics: Active Vibration Control
+    (cool) Atomionics: Cooling Laser module
+    (shoe) MIT Age: Footwear design/sketches and idea generation
+    (holo) Personal: Spinning hologram
+    (watch) Culpepper: Compliant systems modeling and implementation on micro-scale fastening systems in mechanical watches
+    (cell) NCU (Taiwan): Invar laser cell and laser system modeling
+    (light) Design: Light with two sides
+    (chapel) Design: Souveniers
+    (gira) 2.007 Robot
+    (art) Misc Art: Polaroid, rabbit, folding, mural, paintings
+    (makemit) MakeMIT: Choordinate/Amplify (make visual?)
     
