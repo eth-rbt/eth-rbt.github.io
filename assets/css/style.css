@@ -9,6 +9,14 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+.video-container {
+  text-align: center;
+}
+
+.video {
+  display: inline-block;
+}
+
 body {
   font-family: "Inconsolata", monospace;
   color: #0d1e2d;
