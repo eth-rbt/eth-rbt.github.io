@@ -23,7 +23,7 @@
   <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="/assets/css/style.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: MyPortfolio
@@ -32,6 +32,26 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  
+  <style>
+  
+    .video-container {
+        text-align: center;
+        margin: 0 auto; /* Center horizontally */
+    }
+    
+    .video {
+        display: inline-block;
+    }
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+  </style> 
+
 </head>
 
 <body>
@@ -80,27 +100,6 @@
       </div>
     </section>
 
-
-
-
-    <section class="section pt-0">
-      <div class="container">
-        <div class="video-container" data-aos="fade-up">
-          <video controls width="640" height="360">
-              <source src="pics/test.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-          </video>
-
-        </div>
-        
-
-      </div>
-      
-    </section>
-    
-
-
-
     <!-- ======= Testimonials Section ======= -->
     <section class="section pt-0">
       <div class="container">
@@ -116,7 +115,9 @@
                   </div>
                 
                   <div class="col-md-6 ml-auto" data-aos="fade-up">
-
+                    <h3 class="h3">
+                      Title about the picture
+                    </h3>
                     <div class="mb-5 testimonial">
                       <p> some text here</p>
                     </div>
@@ -126,15 +127,12 @@
             <!-- End testimonial item -->
 
             <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial">
-                  <img src="../assets/img/person_2.jpg" alt="Image" class="img-fluid">
-                  <blockquote>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis
-                      explicabo inventore.</p>
-                  </blockquote>
-                  <p>&mdash; Chris Stanworth</p>
-                </div>
+              <div class="testimonial">
+                <img src="pics/actvib_0.png" alt="Image" class="center">
+                <blockquote>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis
+                    explicabo inventore.</p>
+                </blockquote>
               </div>
             </div><!-- End testimonial item -->
 
@@ -144,6 +142,22 @@
 
       </div>
     </section><!-- End Testimonials Section -->
+
+    <!-- ======= Videos Section ======= -->
+    <section class="section pt-0">
+      <div class="container">
+        <div class="video-container" data-aos="fade-up">
+          <video controls width="640" height="360">
+              <source src="pics/test.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+          <p> Video: The Active Damping system at work </p>
+          <p> (Green line: Noise level, each grid is 0.001m/s^2)</p>
+        </div>
+      </div>
+    </section>
+        
+    
 
 
 
