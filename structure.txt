@@ -2,9 +2,6 @@ To Do List
 
 UI/UX side:
     Why is it not secure its so fuking secure
-    Figure out how to create multiple pages for different projects.
-    -> make a template
-    Consider a good layout for all these projects
 
 Visuals:
     Create visuals for Culpepper Stuffs/ Talk about what can I put 
@@ -13,6 +10,9 @@ Visuals:
 
 Project listings:
     (actvib) Atomionics: Active Vibration Control
+        Page kinda laggy with two videos...
+        Add a fourth point?
+
     (cool) Atomionics: Cooling Laser module
     (shoe) MIT Age: Footwear design/sketches and idea generation
     (holo) Personal: Spinning hologram

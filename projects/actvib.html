@@ -148,13 +148,20 @@
 
         <div data-aos="fade-up">
           <h3 class="h3">Progress and Gallery</h3>
+
           <div class="mb-5">
+            This project requires analyzing the quantum system and how the external noise will influence the measuring results. I simulated the system with external disturbance under different profiles and quantified the result uncertainty levels to do this. From this, I deduce the system required to filter out the noise and approach the problem from a product design perspective to design a robust system. These are the steps and the design decisions I made: 
             <ol type="1" font-weight: bold>
               <li><b>Varifying noise source and contribution</b><br>
                 I collected background noise, performed simulations on different noises, and incorporated the quantum detection scheme. 
-                It is shown that more than 80% of the noise of our data is from the ground vibration noise.</li>
-              <li>Tea</li>
-              <li>Milk</li>
+                It is shown that more than 80% of the noise of our data is from the ground vibration noise.Simulation of different close-loop attenuation profile is done to decide how good the attenuation need to be. </li>
+              <li><b>Design requirements and decisions </b> <br>
+                Besides the attenuation profile, other design requirements are considered. The device has to be portable, impact-withstanding, and has a low deflection angle for the mirror mounted on it. A voice coil actuation schematic is selected to implement a low-lag feedback loop. The voice coil is fine-tunable by optics stages. 
+                Slots are implemented to allow individual movement of the supporting springs to ensure flatness.  </li>
+              <li><b>Control scheme</b> <br>
+                The noise bottlenecks are strict in order to achieve the accuracy I want. A mix of high-frequency DAQ hardware and precise current amplifiers is selected. The control system incorporates frequency domain and lead-lag controller design. 
+                All the hardware and plants are modeled on Matlab and implemented through Lua scripts. 
+              </li>
             </ol>
             
           </div>
