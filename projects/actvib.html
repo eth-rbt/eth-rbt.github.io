@@ -48,7 +48,13 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 50%;
+
+    }
+    li{
+      margin: 10px 0;
+    }
+    ol > li::marker {
+      font-weight: bold;
     }
   </style> 
 </head>
@@ -79,8 +85,8 @@
                 <h3 class="h3">Internship Project</h3>
                 <p class="mb-4"><span class="text-muted">Control/ProductDesign/Physics </span></p>
                 <div class="mb-5">
-                  <p>I designed an active feedback loop for a startup working on accurate gravity data acqusition. 
-                    The device I build end up <b> lower the noise for 30X </b>, and would be intergrated in the next version of the product.</p>
+                  <p>I designed an active feedback loop for a startup working on accurate gravity data acquisition. 
+                    The device I built <b>lowered the noise by 30X</b> and would be integrated into the next version of the product.</p>
                 </div>
                 <h4 class="h4 mb-3">Skills</h4>
                 <ul class="list-unstyled list-line mb-5">
@@ -100,11 +106,22 @@
     <section class="section pt-0">
       <div class="container">
         <div data-aos="fade-up">
-          <h3 class="h3">Internship Project</h3>
+          <h3 class="h3">Problem Statement</h3>
           <div class="mb-5">
-            <p>I designed an active feedback loop for a startup working on accurate gravity data acqusition. 
-              The device I build end up <b> lower the noise for 30X </b>, and would be intergrated in the next version of the product.</p>
+            Atomionics is a middle size startup aiming to do underground exploration based on gravitational data. 
+            However, their quantum sensor faced the problem of having higher noise than they needed. 
+            Specifically, the vibration of the ground contributes to the final gravity data measured. 
+            I was tasked to verify whether a noise-canceling system would benefit and to implement a solution. 
           </div>
+          <h3 class="h3">Results</h3>
+          <div class="mb-5">
+            This platform reached force attenuation from 10^-5 to 3*10^-7 (m/s^2) from ground and acoustic vibrations. We took the platform on a drive to simulate the impact the platform will get on the final product. The platform can perform after impacts 90% of the time. 
+            Even if the platform receives substantial impacts, we can fine-tune it back to functioning in under 1 minute. 
+            There is low flexing and tilting exhibited in the platform. This is tested by the laser alignment and the use of the individually tunable sliding system.
+            Using this damping platform, I verified that the company would be able to collect gravity data with <b>uncertainty a degree lower</b>. 
+          </div>
+
+
         </div>
 
       
@@ -130,10 +147,16 @@
         </div>
 
         <div data-aos="fade-up">
-          <h3 class="h3">Internship Project</h3>
+          <h3 class="h3">Progress and Gallery</h3>
           <div class="mb-5">
-            <p>I designed an active feedback loop for a startup working on accurate gravity data acqusition. 
-              The device I build end up <b> lower the noise for 30X </b>, and would be intergrated in the next version of the product.</p>
+            <ol type="1" font-weight: bold>
+              <li><b>Varifying noise source and contribution</b><br>
+                I collected background noise, performed simulations on different noises, and incorporated the quantum detection scheme. 
+                It is shown that more than 80% of the noise of our data is from the ground vibration noise.</li>
+              <li>Tea</li>
+              <li>Milk</li>
+            </ol>
+            
           </div>
         </div>
 
@@ -143,15 +166,43 @@
             <!-- Item for centered picture-->
             <div class="swiper-slide">
               <div class="testimonial">
-                <img src="pics/vib2.png" alt="Image" class="center">
+                <img src="pics/vib2.png" alt="Image" class="center"   height= 480px >
                 <div class="mb-5 center">
-                  <center>Test Setup of the system</center>
+                  <center>System Features</center>
                   <br>
                 </div>
               </div>
             </div>
             <!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial">
+                <img src="pics/vibnoise.png" alt="Image" class="center"   height= 480px >
+                <div class="mb-5 center">
+                  <center>Frequency Domain of Noise Levels</center>
+                  <br>
+                </div>
+              </div>
+            </div>
 
+            <div class="swiper-slide">
+              <div class="testimonial">
+                <img src="pics/vibsetup.jpg" alt="Image" class="center"   height= 480px >
+                <div class="mb-5 center">
+                  <center>Testing Setup on Noise Level Differences</center>
+                  <br>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial">
+                <img src="pics/vibcad.jpg" alt="Image" class="center"   height= 480px >
+                <div class="mb-5 center">
+                  <center>Final Product CAD</center>
+                  <br>
+                </div>
+              </div>
+            </div>
 
           </div>
           <div class="swiper-pagination"></div>
