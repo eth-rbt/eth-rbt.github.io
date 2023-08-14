@@ -47,7 +47,6 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 50%;
     }
     li{
       margin: 10px 0;
@@ -67,8 +66,8 @@
       <div class="container">
         <div class="row mb-4 align-items-center">
           <div class="col-md-6" data-aos="fade-up">
-            <h2> MIT Meche Undergrad Robotics Competition</h2>
-            <p> <a href="https://me-2007.mit.edu/">MIT 2.007 spring class 2023</a>, Feb 2023 - May 2023</p>
+            <h2> MIT Meche Robotics Class<br> - Design and Manufacturing I</h2>
+            <p> <a href="https://me-2007.mit.edu/">MIT 2.007 spring 2023</a>, Feb 2023 - May 2023</p>
           </div>
         </div>
       </div>
@@ -84,14 +83,17 @@
                 <h3 class="h3">Class Competition</h3>
                 <p class="mb-4"><span class="text-muted">Mechanical/Robotics</span></p>
                 <div class="mb-5">
-                  <p></p>
+                  <p>2.007 is an undergraduate class in the MIT Department of Mechanical Engineering that develops students' competence and self-confidence as design engineers. 
+                    As is the tradition, the course will end in a final robot competition, in which students compete against each other to see whose robot can win the total points.
+                    I ended up winning the <b>first place</b> for the 2023 tournament out of all 90 students. </p>
                 </div>
                 <h4 class="h4 mb-3">Skills</h4>
                 <ul class="list-unstyled list-line mb-5">
                   <li>Solidworks</li>
-                  <li>CNC Mill</li>
-                  <li>CNC Lathe</li>
+                  <li>Mill/Lathe</li>
                   <li>Sheetmetal</li>
+                  <li>Design Process</li>
+                  <li>C/C++/Arduino</li>
                 </ul>
               </div>
             </div>
@@ -105,72 +107,86 @@
       <div class="container">
 
         <div data-aos="fade-up">
-          <h3 class="h3">Topic1</h3>
+          <h3 class="h3">Competition Goal</h3>
           <div class="mb-5">
-            <p>I designed an active feedback loop for a startup working on accurate gravity data acqusition. 
-              The device I build end up <b> lower the noise for 30X </b>, and would be intergrated in the next version of the product.</p>
+            <p>The competition consists of individual scoring mechanisms that two players rush to accumulate as many points as possible in 2 minutes. Students spent a semester developing robots constrained by power, weight, material, and size. Common tactics include blocking opponent, racing to score mechanisms precisely, and designing strategies that is consistent but has a high return. 
+              This class is considered the capstone class for meche sophomores at MIT. It is also the origin of high school FRC competitions. 
+            <br> See full 2023<a href=2.007_rules.pdf> rules. </a></p>
+          </div>
+        </div>
+        <div data-aos="fade-up">
+          <h3 class="h3">Strategy/Results</h3>
+          <div class="mb-5">
+            <p>I designed a modular robot that could separate into two smaller bots at the start of the competition. So, I could use the autonomous period to double the highest-scoring mechanism on the board and simultaneously drive to the multiplier earlier than the opponent. 
+              I maximize the power of the motors, either by saving motor count by constraining degrees of freedom, or by having motors serve two functions: lifting a pinion and spinning a heavily damped ring. </p>
           </div>
         </div>
 
-      <!-- video stuff start-->
+        <!-- video stuff start-->
         <div class="video-container" data-aos="fade-up">
-          <video controls width="640" height="360">
-              <source src="pics/test.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-          </video>
+          <iframe width="650" height="380" src="https://www.youtube.com/embed/xiEVFDO_1KU" frameborder="0" allowfullscreen></iframe>
           <div class="mb-5"> 
-            <p> Video: The Active Damping system at work <br>
-            (Green line: Noise level, each grid is 0.001m/s^2)</p>
+            <p> Video: MIT 2.007 Compeition Finals (2023)</p>
           </div>
         </div>
       <!-- video stuff ends-->
 
-      <!-- Image stuff start-->
-      <div data-aos="fade-up">
-        <img src="pics/vib/vib2.png" alt="Image" class="center">
-        <div class="mb-5 center">
-          <center>Image: Test Setup of the system</center>
-          <br>
+      <!-- video stuff start-->
+        <div class="video-container" data-aos="fade-up">
+          <iframe width="650" height="380" src="https://www.youtube.com/embed/I3NyZOR1Wv8" frameborder="0" allowfullscreen></iframe>
+          <div class="mb-5"> 
+            <p> Video: Explanation of my Competition Robot - Girafarig</p>
+          </div>
         </div>
-      </div>
-      <!-- Image stuff end-->
+      <!-- video stuff ends-->
+
 
         <div data-aos="fade-up">
-          <h3 class="h3">Topic2</h3>
+          <h3 class="h3">Design Progress/Iterations</h3>
           <div class="mb-5">
-            <p>I designed an active feedback loop for a startup working on accurate gravity data acqusition. 
-              The device I build end up <b> lower the noise for 30X </b>, and would be intergrated in the next version of the product.</p>
+            <p>I went through the design process of deciding on strategies, selecting mechanisms, testing, hypothesis verification, and iterations of this process. I understand how to set up functional requirements and identify possible design problems through simple prototypes or calculations. I also design for my robots to be easily machined and modifiable. On top of it all, I have repeatability and consistency as one of the most essential requirements to ensure performance. 
+              These design decisions allowed me to constantly score more than 100 points than my opponents for most matches. </p>
           </div>
         </div>
 
         <!-- slider template-->
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
-            <!-- Item for two columned picture-->
+            <!-- Item for centered picture-->
+            
             <div class="swiper-slide">
               <div class="testimonial">
-                <div class="row">  
-                  <div class="col-md-6" data-aos="fade-up">
-                    <img src="pics/vib2.png" alt="Image" class="img-fluid">
-                  </div>
-                  <div class="col-md-6 ml-auto" data-aos="fade-up">
-                    <h3 class="h3">
-                      Title about the picture
-                    </h3>
-                    <div class="mb-5">
-                      <p> some text here</p>
-                    </div>
-                  </div>    
+                <img src="pics/gira/deg-1.jpg" alt="Image" class="center" height= 480px> 
+                <div class="mb-5 center">
+                  <center>Assembly of the Two Robots</center>
+                  <br>
                 </div>
               </div>
             </div>
-
-            <!-- Item for centered picture-->
             <div class="swiper-slide">
               <div class="testimonial">
-                <img src="pics/vib2.png" alt="Image" class="center" height= 480px> 
+                <img src="pics/gira/deg-2.jpg" alt="Image" class="center" height= 480px> 
                 <div class="mb-5 center">
-                  <center>Test Setup of the system</center>
+                  <center>Robot on the Full Game Board</center>
+                  <br>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial">
+                <img src="pics/gira/deg-3.jpg" alt="Image" class="center" height= 480px> 
+                <div class="mb-5 center">
+                  <center>Robot on the Spinner Stage</center>
+                  <br>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="testimonial">
+                <img src="pics/gira/deg-6.png" alt="Image" class="center" height= 480px> 
+                <div class="mb-5 center">
+                  <center>CAD and Robot Name Origin</center>
                   <br>
                 </div>
               </div>
