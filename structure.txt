@@ -5,22 +5,26 @@ UI/UX side:
 
 Visuals:
     Create visuals for Culpepper Stuffs/ Talk about what can I put 
-    Create visuals for 2.007
-    Recrop pictures, colortoning (figure out project page first)...
+    Rewrite the nav bar text since it's showing on on the google search
 
 Project listings:
     (actvib) Atomionics: Active Vibration Control
-        Page kinda laggy with two videos...
         Add a fourth point?
 
-    (cool) Atomionics: Cooling Laser module
+    (gira) 2.007 Robot
+        Make the final ones clearer, and perhaps add descriptions, notations, for the robot.
+
     (shoe) MIT Age: Footwear design/sketches and idea generation
+        Conclusion graphics?
+    
     (holo) Personal: Spinning hologram
+
+
     (watch) Culpepper: Compliant systems modeling and implementation on micro-scale fastening systems in mechanical watches
     (cell) NCU (Taiwan): Invar laser cell and laser system modeling
     (light) Design: Light with two sides
     (chapel) Design: Souveniers
-    (gira) 2.007 Robot
+    (cool) Atomionics: Cooling Laser module
     (art) Misc Art: Polaroid, rabbit, folding, mural, paintings
     (makemit) MakeMIT: Choordinate/Amplify (make visual?)
     
