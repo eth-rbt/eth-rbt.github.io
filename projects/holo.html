@@ -82,7 +82,7 @@
                 <h3 class="h3">Personal Project</h3>
                 <p class="mb-4"><span class="text-muted">Control/Electronics/Design </span></p>
                 <div class="mb-5">
-                  <p> In Spring 2022, I proposed a 3D display device to enable group discussions around a 3D model. MIT then funded this proposal, and it turned into my dorm project. I designed a high-rpm spinning LED matrix with a fast, low-level update code. 
+                  <p> In Spring 2022, I proposed a <b>3D display device</b> to enable group discussions around a 3D model. MIT then funded this proposal, and it turned into my dorm project. I designed a high-rpm spinning LED matrix with a fast, low-level update code. 
                     This allows a 3D video to be displayed in the middle of the air. 
                   </p>
                 </div>
@@ -105,87 +105,115 @@
       <div class="container">
 
         <div data-aos="fade-up">
-          <h3 class="h3">Topic1</h3>
+          <h3 class="h3">Project Goal</h3>
           <div class="mb-5">
-            <p>I designed an active feedback loop for a startup working on accurate gravity data acqusition. 
-              The device I build end up <b> lower the noise for 30X </b>, and would be intergrated in the next version of the product.</p>
+            <p>A volumetric hologram is designed for this project. A high-rpm spinning LED matrix with a fast, low-level update code is used to achieve this goal. I allow the LED matrix to display in both directions so there will be no barrier to seeing it from both sides. 
+              This will allow people to upload their CAD into the hologram, and it'll display the file for people to view it from all angles.
+            </p>
+          </div>
+        </div>
+        <div data-aos="fade-up">
+          <h3 class="h3">Results</h3>
+          <div class="mb-5">
+            
+            <p>I use Matlab to generate and simulate the color of the individual LEDs at certian timing and postions. I then combine them into files that 
+              are preloaded into the micro controller. After several steps of pre-calculation, the system can reach the following specs: 
+              <ol type="1" font-weight: bold>
+              <li>Spin speed > 1200 rpm    </li>           
+              <li>Absolute angle = ± 0.5 degree</li>
+              <li>Refresh Rate > 1000hz</li>
+              </ol>
+              Combined with an accurate control and timing scheme, this allows an accurate 3D image to be displayed in space with visal depth.
+            </p>
           </div>
         </div>
 
       <!-- video stuff start-->
         <div class="video-container" data-aos="fade-up">
-          <iframe width="650" height="380" src="https://www.youtube.com/embed/I3NyZOR1Wv8" frameborder="0" allowfullscreen></iframe>
+          <iframe width="650" height="380" src="https://www.youtube.com/embed/O5dImRUdL_U" frameborder="0" allowfullscreen></iframe>
           <div class="mb-5"> 
-            <p> Video: Explanation of my Competition Robot - Girafarig</p>
+            <p> Video: Hologram displaying a rolling beachball</p>
           </div>
         </div>
       <!-- video stuff ends-->
-
-
-
       <!-- video stuff start-->
-        <div class="video-container" data-aos="fade-up">
-          <video controls width="640" height="360">
-              <source src="pics/test.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-          </video>
-          <div class="mb-5"> 
-            <p> Video: The Active Damping system at work <br>
-            (Green line: Noise level, each grid is 0.001m/s^2)</p>
-          </div>
-        </div>
-      <!-- video stuff ends-->
-
-      <!-- Image stuff start-->
-      <div data-aos="fade-up">
-        <img src="pics/vib/vib2.png" alt="Image" class="center" width=50%>
-        <div class="mb-5 center">
-          <center>Image: Test Setup of the system</center>
-          <br>
+      <div class="video-container" data-aos="fade-up">
+        <iframe width="650" height="380" src="https://www.youtube.com/embed/gYhyfNQAe5U" frameborder="0" allowfullscreen></iframe>
+        <div class="mb-5"> 
+          <p> Video: Hologram test of concept</p>
         </div>
       </div>
-      <!-- Image stuff end-->
+    <!-- video stuff ends-->
+
 
         <div data-aos="fade-up">
-          <h3 class="h3">Topic2</h3>
+          <h3 class="h3">Design Decisions</h3>
           <div class="mb-5">
-            <p>I designed an active feedback loop for a startup working on accurate gravity data acqusition. 
-              The device I build end up <b> lower the noise for 30X </b>, and would be intergrated in the next version of the product.</p>
+            <p>On the structural side, rotary shafts with self-aligning bearings are chosen. The frame is 3dp to minimize mass imbalance. I iterated through different motors and eventually decided on a brushless motor with a hall effect encoder to give enough power.
+              I first used PID control for the control and then switched to pure open loop control to get more accurate angle values. The program is coded on esp32 with a high clock rate. Individual addressable with parallel output is used to maximize the update rate</p>
           </div>
         </div>
 
         <!-- slider template-->
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
-            <!-- Item for two columned picture-->
+          
+
+            <!-- Item for centered picture-->
+
             <div class="swiper-slide">
               <div class="testimonial">
-                <div class="row">  
-                  <div class="col-md-6" data-aos="fade-up">
-                    <img src="pics/vib2.png" alt="Image" class="img-fluid">
-                  </div>
-                  <div class="col-md-6 ml-auto" data-aos="fade-up">
-                    <h3 class="h3">
-                      Title about the picture
-                    </h3>
-                    <div class="mb-5">
-                      <p> some text here</p>
-                    </div>
-                  </div>    
+                <img src="pics/holo/holo_0.jpg" alt="Image" class="center" height= 480px> 
+                <div class="mb-5 center">
+                  <center>Hologram Display - Floating Cube</center>
+                  <br>
                 </div>
               </div>
             </div>
 
-            <!-- Item for centered picture-->
             <div class="swiper-slide">
               <div class="testimonial">
-                <img src="pics/vib2.png" alt="Image" class="center" height= 480px> 
+                <img src="pics/holo/holo_2.jpg" alt="Image" class="center" height= 480px> 
+                <div class="mb-5 center">
+                  <center>Hologram Display - Ball Bumping in to Wall</center>
+                  <br>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial">
+                <img src="pics/holo/holo_4.png" alt="Image" class="center" height= 480px> 
+                <div class="mb-5 center">
+                  <center>MatLab Simulation to Produce C code</center>
+                  <br>
+                </div>
+              </div>
+            </div>
+
+            
+
+            <div class="swiper-slide">
+              <div class="testimonial">
+                <img src="pics/holo/holo_5.jpg" alt="Image" class="center" height= 480px> 
                 <div class="mb-5 center">
                   <center>Test Setup of the system</center>
                   <br>
                 </div>
               </div>
             </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial">
+                <img src="pics/holo/holo_3.png" alt="Image" class="center" height= 480px> 
+                <div class="mb-5 center">
+                  <center>Test Setup of the system</center>
+                  <br>
+                </div>
+              </div>
+            </div>
+
+
 
           </div>
           <div class="swiper-pagination"></div>
