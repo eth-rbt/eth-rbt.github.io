@@ -66,7 +66,7 @@
         <div class="row mb-4 align-items-center">
           <div class="col-md-6" data-aos="fade-up">
             <h2>Spinning Hologram</h2>
-            <p>MIT Dorm Project, Jan 2022 - May 2022</p>
+            <p>MIT Dorm Project, Jan. 2022 - May 2022</p>
           </div>
         </div>
       </div>
@@ -82,13 +82,12 @@
                 <h3 class="h3">Personal Project</h3>
                 <p class="mb-4"><span class="text-muted">Control/Electronics/Design </span></p>
                 <div class="mb-5">
-                  <p> In Spring 2022, I proposed a <b>3D display device</b> to enable group discussions around a 3D model. MIT then funded this proposal, and it turned into my dorm project. I designed a high-rpm spinning LED matrix with a fast, low-level update code. 
-                    This allows a 3D video to be displayed in the middle of the air. 
+                  <p> In Spring 2022, I proposed a <b>3D display device</b> to facilitate group discussions around 3D models. MIT funded the proposal, and it became my dorm project. I designed a high-rpm spinning LED matrix with optimized low-level video update code, enabling display of 3D videos suspended in midair.
                   </p>
                 </div>
                 <h4 class="h4 mb-3">Skills</h4>
                 <ul class="list-unstyled list-line mb-5">
-                  <li>MatLab Simulation</li>
+                  <li>Matlab Simulation</li>
                   <li>Controls</li>
                   <li>C/C++/Teensy</li>
                   <li>Electronics</li>
@@ -107,8 +106,7 @@
         <div data-aos="fade-up">
           <h3 class="h3">Project Goal</h3>
           <div class="mb-5">
-            <p>A volumetric hologram is designed for this project. A high-rpm spinning LED matrix with a fast, low-level update code is used to achieve this goal. I allow the LED matrix to display in both directions so there will be no barrier to seeing it from both sides. 
-              This will allow people to upload their CAD into the hologram, and it'll display the file for people to view it from all angles.
+            <p>I designed a high-rpm spinning LED matrix with a fast, low-level update code to display volumetric holograms. The LED matrix was made viewable from both sides, eliminating visual barriers. This enabled people to upload CAD files into the device and view 3D models from all angles.
             </p>
           </div>
         </div>
@@ -116,14 +114,13 @@
           <h3 class="h3">Results</h3>
           <div class="mb-5">
             
-            <p>I use Matlab to generate and simulate the color of the individual LEDs at certian timing and postions. I then combine them into files that 
-              are preloaded into the micro controller. After several steps of pre-calculation, the system can reach the following specs: 
+            <p>I use Matlab to generate and simulate the color of the individual LEDs by timing and postion. I then saved the simulations into files that can be uploaded into the microcontroller. The final system reached the following specs: 
               <ol type="1" font-weight: bold>
-              <li>Spin speed > 1200 rpm    </li>           
-              <li>Absolute angle = ± 0.5 degree</li>
-              <li>Refresh Rate > 1000hz</li>
+              <li>Spin speed > 1200 rpm </li>           
+              <li>Absolute angle = ± 0.5 degrees</li>
+              <li>Refresh Rate > 1000 Hz</li>
               </ol>
-              Combined with an accurate control and timing scheme, this allows an accurate 3D image to be displayed in space with visal depth.
+              The accurate control and timing scheme allows an 3D image to be displayed in space with precise visual depth.
             </p>
           </div>
         </div>
@@ -149,8 +146,7 @@
         <div data-aos="fade-up">
           <h3 class="h3">Design Decisions</h3>
           <div class="mb-5">
-            <p>On the structural side, rotary shafts with self-aligning bearings are chosen. The frame is 3dp to minimize mass imbalance. I iterated through different motors and eventually decided on a brushless motor with a hall effect encoder to give enough power.
-              I first used PID control for the control and then switched to pure open loop control to get more accurate angle values. The program is coded on esp32 with a high clock rate. Individual addressable with parallel output is used to maximize the update rate</p>
+            <p>For the structure, self-aligning bearings on rotary shafts were chosen, and the frame was 3D printed to minimize imbalance. After testing motors, a brushless motor with a hall effect encoder was selected for sufficient power. The control system was initially PID before switching to open loop control for better angle accuracy. The program runs on an ESP32 at a high clock rate, using individual addressable LEDs with parallel output to maximize video update rate.</p>
           </div>
         </div>
 
