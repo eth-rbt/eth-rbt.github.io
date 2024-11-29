@@ -81,22 +81,21 @@
             <div class="col-md-8" data-aos="fade-up">
               <img src="pics/btb/hero.png" alt="Image" class="img-fluid">
             </div>
-            <div class="col-md-3 ml-auto" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-md-4 ml-auto" data-aos="fade-up" data-aos-delay="100">
               <div class="sticky-content">
-                <h3 class="h3">Class Project</h3>
-                <p class="mb-4"><span class="text-muted">Design/Architecture</span></p>
+                <h3 class="h3">AI-Powered Boombox for Music Generation from Freestyle Dance</h3>
                 <div class="mb-5">
-                  In MIT 4.022 (Introduction to Design Techniques and Technologies), we are asked to develop a series of souvenirs that question resolution and legibility through disciplined acts of miniaturization. My partner and I created a series of works representing MIT Chapel using various media forms.
+                  Dance has traditionally been guided by music throughout history and across cultures, yet the concept of dancing to create music
+is rarely explored. Be the Beat is an AI-powered boombox designed to generate music from a dancer's
+movement. Be the Beat uses PoseNet to describe movements for a large language model, enabling it to analyze dance style and query
+APIs to find music with similar style, energy, and tempo. In our pilot trials, the boombox successfully matched music to the tempo of
+the dancer's movements and even distinguished the intricacies between house and Hip-Hop moves
                 </div>
                 
-                <h4 class="h4 mb-3">Skills</h4>
-                <ul class="list-unstyled list-line mb-5">
-                  <li>Rhinoceros 3D</li>
-                  <li>Model Casting</li>
-                  <li>Visual Creation</li>
-                  <li>Paper Mache/Spraypaint</li>
-                </ul>
-                <h4 class="h4 mb-3">Collaborator: Frederick Hoffman</h4>
+                
+                <h4 class="h4 mb-3">Collaborator: Zhixing Chen</h4>
+                <h4 class="h4 mb-3">2024 Neurips Creative AI Track</h4>
+                <h4 class="h4 mb-3">2025 TEI Work in Progress</h4>
               </div>
             </div>
           </div>
@@ -107,30 +106,64 @@
     <!-- ======= Videos Section ======= -->
     <section class="section pt-0">
       <div class="container">
+        <div class="row align-items-stretch">
+          <div class="col-md-12" data-aos="fade-up">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.dropbox.com/scl/fi/k4fg0d11es92sjae9bjnq/Be_the_Beat_NeurIPS_Camera_Ready.mp4?rlkey=st74c90na5ksdkdzmvdnxlvtz&raw=1" 
+                      title="Be the Beat Demo Video"
+                      allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section pt-0">
+      <div class="container">
 
         <div data-aos="fade-up">
           <h3 class="h3">Project Description</h3>
           <div class="mb-5">
-            <p>This assignment drew inspiration from the brickwork of MIT's cylindrical Chapel building. The hand-selected bricks of varying shapes and sizes, with some protruding more than others, create an intriguing interplay of light and shadow. We were interested in exploring how much of the Chapel could be conveyed through minimal information. Our approach manipulated the number of bricks, shadows, and brick patterns shown in 2D and 3D miniatures. This directed our investigation into distilling the essence of the Chapel through abstraction.</p>
+            Be the Beat transforms dance movements into music through AI technologies, creating a unique, interactive experience.
+The device can be used when dancers have a specific feeling of dance moves in their mind but can't come up with a
+song. Triggered by a hand clap from the user, this activates the workflow below:
+<ol>
+  <li>Dancer wants to find a song that fits their freestyle inspiration in the moment but doesn't have a specific song
+  in mind.</li>
+
+  <li>Dancer turns on Be the Beat and claps to start the recording process.</li>
+
+  <li>Be the Beat captures live poses in the dancer's performance and processes the data.</li>
+
+  <li>Within 5 seconds, the boombox generates a list of recommended songs from Spotify based on the dance features
+  and starts playing the first song.</li>
+
+  <li>Dance hears the song played by the speaker and starts dancing to the selected song.</li>
+
+  <li>If the dancer wants another song or shift dance style in certain directions, the dancer can clap and restart the
+  generation process to get new recommendations as their freestyle dance develops.</li>
+</ol>
+The generative experience of LLMs in music and dance enables users to engage in an ongoing creative dialogue
+with the machine. While previous physical music interfaces relied on hardcoded mappings between gestures and music
+generation, our project leverages AI capabilities to interpret a broad, open-ended range of gestures and body movements,
+vastly expanding the input possibilities.
           </div>
         </div>
 
 
       <!-- Image stuff start-->
       <div data-aos="fade-up">
-        <img src="pics/chapel/chapel.jpeg" alt="Image" class="center" width=540px>
+        <img src="pics/btb/hold.png" alt="Image" class="center" width=540px>
         <div class="mb-5 center">
-          <center>Image: MIT Chapel</center>
+          <center>Boombox Form Factor</center>
           <br>
         </div>
       </div>
       <!-- Image stuff end-->
 
         <div data-aos="fade-up">
-          <h3 class="h3">Two-Dimensional Drawings and Reliefs</h3>
+          <h3 class="h3">Pilot test feedback</h3>
           <div class="mb-5">
-            <p>We focused on replicating the "special bricks" - the varied protruding bricks of different sizes and shapes. After analyzing the chapel bricks, we created a set of distinct bricks for our studies. Experimenting with spraypaint and laser cutting let us explore legibility limits with new materials. This examination of materials and abstraction of salient bricks directed our investigation into conveying the chapel through minimal, yet expressive, details.</p>
-          </div>
+            A pilot test of the "Be the Beat" AI boombox revealed promising potential but highlighted areas for improvement. Participants found the device intuitive to activate, though some struggled to understand how movements translated to music generation. While the system impressed users by successfully mapping certain dance styles (e.g., Hip-Hop, House) to fitting music, it was inconsistent in matching genres and failed to reliably recognize nuanced styles like Latin dance. The unpredictability of outputs fostered creative exploration, with dancers discovering new styles and adapting performances, though some desired greater control over genre and tempo selection. Suggested improvements included integrating Spotify for personalized playlists, enhancing movement recognition, and exploring features like emotion-based music selection via facial recognition, offering a more interactive and customizable experience.          </div>
         </div>
 
         <!-- slider template-->
@@ -139,9 +172,9 @@
             <!-- Item for centered picture-->
             <div class="swiper-slide">
               <div class="testimonial">
-                <img src="pics/chapel/2D.jpg" alt="Image" class="center" height= 540px> 
+                <img src="pics/btb/pipeline.png" alt="Image" class="center" height= 540px> 
                 <div class="mb-5 center">
-                  <center>Paper Relief of the Chapel</center>
+                  <center>Generation Pipeline</center>
                   <br>
                 </div>
               </div>
@@ -149,69 +182,9 @@
 
             <div class="swiper-slide">
               <div class="testimonial">
-                <img src="pics/chapel/2D-1.jpg" alt="Image" class="center" height= 540px> 
+                <img src="pics/btb/explode.png" alt="Image" class="center" height= 540px> 
                 <div class="mb-5 center">
-                  <center>Paper Relief of the Chapel</center>
-                  <br>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial">
-                <img src="pics/chapel/2D-5.jpg" alt="Image" class="center" height= 540px> 
-                <div class="mb-5 center">
-                  <center>3D Printed Bricks for Molding</center>
-                  <br>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial">
-                <img src="pics/chapel/2D-6.jpg" alt="Image" class="center" height= 540px> 
-                <div class="mb-5 center">
-                  <center>Small Scale Test Relief</center>
-                  <br>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial">
-                <img src="pics/chapel/2D-7.png" alt="Image" class="center" height= 540px> 
-                <div class="mb-5 center">
-                  <center>Drawing of the Expected Outcome</center>
-                  <br>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial">
-                <img src="pics/chapel/2D-2.jpg" alt="Image" class="center" height= 540px> 
-                <div class="mb-5 center">
-                  <center>Spraypaint Stencils</center>
-                  <br>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial">
-                <img src="pics/chapel/2D-3.jpeg" alt="Image" class="center" height= 540px> 
-                <div class="mb-5 center">
-                  <center>Spraypaint Pattern</center>
-                  <br>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial">
-                <img src="pics/chapel/2D-4.png" alt="Image" class="center" height= 540px> 
-                <div class="mb-5 center">
-                  <center>Spraypaint Collage</center>
+                  <center>Component Explosion</center>
                   <br>
                 </div>
               </div>
@@ -220,83 +193,8 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
-        <!-- slider template ends here-->
+        <!-- slider template ends here--> 
 
-        <div data-aos="fade-up">
-          <h3 class="h3">Three-Dimensional Miniatures</h3>
-          <div class="mb-5">
-            <p>The final MIT Chapel model posed material challenges, especially experimenting with Rockite for the first time. Considering the cartoonish nature of previous renditions, we designed a toy with removable, swappable bricks in the Chapel's form. We 3D printed colorful bricks in varied dramatic shapes, from basic to protruding "special bricks." These final four souvenirs combine previous ideas — low resolution, special bricks, overall form — with the Chapel's sentiment. Fabricating them required exploring diverse materials and processes, synthesizing concepts that evolved across mediums.</p>
-          </div>
-        </div>
-
-        <!-- slider template-->
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-            <!-- Item for centered picture-->
-            <div class="swiper-slide">
-              <div class="testimonial">
-                <img src="pics/chapel/3D-0.jpeg" alt="Image" class="center" height= 540px> 
-                <div class="mb-5 center">
-                  <center>Powder Print Models</center>
-                  <br>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial">
-                <img src="pics/chapel/3D-1.png" alt="Image" class="center" height= 540px> 
-                <div class="mb-5 center">
-                  <center>Powder Print Models</center>
-                  <br>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial">
-                <img src="pics/chapel/3D-2.png" alt="Image" class="center" height= 540px> 
-                <div class="mb-5 center">
-                  <center>Rockite Model - "Flute"</center>
-                  <br>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial">
-                <img src="pics/chapel/3D-3.png" alt="Image" class="center" height= 540px> 
-                <div class="mb-5 center">
-                  <center>Rockite Model - "Slots"</center>
-                  <br>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial">
-                <img src="pics/chapel/3D-4.png" alt="Image" class="center" height= 540px> 
-                <div class="mb-5 center">
-                  <center>Rockite Model - "Bricks"</center>
-                  <br>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial">
-                <img src="pics/chapel/3D-5.png" alt="Image" class="center" height= 540px> 
-                <div class="mb-5 center">
-                  <center>Rockite Model - "Mixed"</center>
-                  <br>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-        <!-- slider template ends here-->
       </div>
     </section>
     

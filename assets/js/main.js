@@ -139,7 +139,7 @@
 
   // Add this to your existing JavaScript
   window.addEventListener('load', () => {
-    const text = "innovative interations.";
+    const text = "innovative interactions.";
     const typedTextSpan = document.querySelector(".typed-text");
     const cursorSpan = document.querySelector(".cursor");
     const typingDelay = 100; // Delay between each character
