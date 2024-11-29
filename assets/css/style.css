@@ -106,67 +106,9 @@ h6,
   overflow: hidden;
 }
 
-.item .item-wrap:after {
-  z-index: 2;
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.3s all ease-in-out;
-}
-
 .item .item-wrap img {
-  transition: 0.3s transform ease;
-  transform: scale(1);
-}
-
-.item .item-wrap>.work-info {
-  position: absolute;
-  top: 50%;
   width: 100%;
-  text-align: center;
-  z-index: 3;
-  transform: translateY(-50%);
-  color: #fff;
-  opacity: 0;
-  visibility: hidden;
-  margin-top: 20px;
-  transition: 0.3s all ease;
-}
-
-.item .item-wrap>.work-info h3 {
-  font-size: 20px;
-  margin-bottom: 0;
-}
-
-.item .item-wrap>.work-info span {
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-}
-
-.item .item-wrap:hover {
-  text-decoration: none;
-}
-
-.item .item-wrap:hover img {
-  transform: scale(1.05);
-}
-
-.item .item-wrap:hover:after {
-  opacity: 1;
-  visibility: visible;
-}
-
-.item .item-wrap:hover .work-info {
-  margin-top: 0px;
-  opacity: 1;
-  visibility: visible;
+  object-fit: cover;
 }
 
 .testimonial-wrap {
@@ -521,4 +463,105 @@ h6,
 
 .social a:hover {
   color: #000;
+}
+
+/* Add this new rule for the large item */
+.col-md-6.item {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Add these new rules for the grid items */
+.col-md-6.item,
+.col-md-3.item {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Add specific rules for the portfolio grid */
+#portfolio-grid {
+  margin-right: -15px;
+  margin-left: -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.item .item-wrap {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.item .item-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#portfolio-grid .item .item-wrap {
+  height: 100%;
+}
+
+#portfolio-grid .item .item-wrap img {
+  height: 100%;
+  object-fit: cover;
+}
+
+#portfolio-grid .col-md-4 .row {
+  height: 100%;
+}
+
+#portfolio-grid .col-md-4 .item {
+  height: calc(50% - 15px);  /* Subtract half of mb-4 (30px) */
+}
+
+/* Add these new rules for the big grid items */
+#portfolio-grid .big_grid {
+  margin-bottom: 24px;
+  position: static;
+}
+
+#portfolio-grid .big_grid .item-wrap {
+  display: block;
+  position: static;
+  overflow: hidden;
+  height: 100%;
+}
+
+#portfolio-grid .big_grid .work-info {
+  padding: 20px;
+  position: static;
+}
+
+#portfolio-grid .big_grid .item-wrap img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: static;
+}
+
+/* Grid Layout Modifications */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.item.wide {
+  grid-column: span 2;
+}
+
+.item.normal {
+  grid-column: span 1;
+}
+
+/* Maintain aspect ratio for images */
+.item .item-wrap {
+  aspect-ratio: 16/9;
+}
+
+.item.wide .item-wrap {
+  aspect-ratio: 32/9;
 }
