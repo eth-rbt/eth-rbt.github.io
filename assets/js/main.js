@@ -137,4 +137,24 @@
     })
   });
 
+  // Add this to your existing JavaScript
+  window.addEventListener('load', () => {
+    const text = "innovative interations.";
+    const typedTextSpan = document.querySelector(".typed-text");
+    const cursorSpan = document.querySelector(".cursor");
+    const typingDelay = 100; // Delay between each character
+    let charIndex = 0;
+
+    function type() {
+      if (charIndex < text.length) {
+        typedTextSpan.textContent += text.charAt(charIndex);
+        charIndex++;
+        setTimeout(type, typingDelay);
+      }
+    }
+
+    // Start the typing animation
+    setTimeout(type, 1000); // Delay before starting
+  });
+
 })()
