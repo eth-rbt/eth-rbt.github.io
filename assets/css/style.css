@@ -101,14 +101,15 @@ h6,
 }
 
 .item .item-wrap {
-  display: block;
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .item .item-wrap img {
   width: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 
 .testimonial-wrap {
@@ -487,21 +488,8 @@ h6,
 }
 
 
-.item .item-wrap {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  height: 100%;
-}
-
-.item .item-wrap img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 #portfolio-grid .item .item-wrap {
-  height: 100%;
+  width: 100%;
 }
 
 #portfolio-grid .item .item-wrap img {
@@ -517,51 +505,117 @@ h6,
   height: calc(50% - 15px);  /* Subtract half of mb-4 (30px) */
 }
 
-/* Add these new rules for the big grid items */
-#portfolio-grid .big_grid {
-  margin-bottom: 24px;
-  position: static;
-}
-
-#portfolio-grid .big_grid .item-wrap {
-  display: block;
-  position: static;
-  overflow: hidden;
-  height: 100%;
-}
-
-#portfolio-grid .big_grid .work-info {
-  padding: 20px;
-  position: static;
-}
-
-#portfolio-grid .big_grid .item-wrap img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  position: static;
-}
 
 /* Grid Layout Modifications */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 0;
+  max-width: 1320px;
 }
 
-.item.wide {
-  grid-column: span 2;
+.grid-item {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: none;
 }
 
-.item.normal {
-  grid-column: span 1;
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
+
+.item-a {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+
+.grid-item .work-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.grid-item .work-info h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.grid-item .work-info span {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+}
+
+/* Hover effect */
+.grid-item:hover .work-info {
+  opacity: 1;
+}
+
+/* Remove the old hover effect */
+.grid-item:hover {
+  background-color: #f8f9fa;  /* Keep original background */
+}
+
 
 /* Maintain aspect ratio for images */
 .item .item-wrap {
-  aspect-ratio: 16/9;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
-.item.wide .item-wrap {
-  aspect-ratio: 32/9;
+.item .item-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
+
+
+.item .work-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.item .work-info h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.item .work-info span {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+}
+
+/* Hover effect */
+.item .item-wrap:hover .work-info {
+  opacity: 1;
+}
+
