@@ -298,7 +298,7 @@ h6,
 --------------------------------------------------------------*/
 /* Custom Navmenu */
 .custom-navmenu {
-  background: #0d1e2d;
+  background: #172f43;
 }
 
 .custom-navmenu .custom-menu,
@@ -311,6 +311,7 @@ h6,
 .custom-navmenu .custom-menu li {
   margin-bottom: 0;
   font-size: 20px;
+  font-family: "Inconsolata", monospace;
 }
 
 .custom-navmenu .custom-menu li a {
@@ -329,6 +330,7 @@ h6,
 .custom-navmenu h3 {
   font-size: 20px;
   color: #fff;
+  font-family: "Inconsolata", monospace;
 }
 
 .custom-navmenu p {
@@ -360,6 +362,7 @@ h6,
 .custom-navbar .navbar-brand {
   /*background:#777777 !important;*/
   font-size: 1.7rem;
+  font-family: "Inconsolata", monospace;
 }
 
 /* Burger */
@@ -669,6 +672,10 @@ h6,
 }
 
 /* Typing animation styles */
+.typed-text {
+  color: #555;
+}
+
 .typed-text::after {
   content: "|";
   animation: blink 1s step-end infinite;

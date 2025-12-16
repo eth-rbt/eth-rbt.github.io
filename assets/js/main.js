@@ -137,11 +137,30 @@
     })
   });
 
-  // Add this to your existing JavaScript
+  // Typing animation with random phrases
   window.addEventListener('load', () => {
-    const text = "innovative interactions.";
+    const phrases = [
+      "how intelligence behaves beyond screens.",
+      "innovative interactions.",
+      "products that grow with users.",
+      "adaptive objects.",
+      "personalized, playful moments."
+    ];
+    
+    // Check if this is the first visit
+    const hasVisited = localStorage.getItem('hasVisitedBefore');
+    let text;
+    
+    if (!hasVisited) {
+      // First visit - use the first phrase
+      text = phrases[0];
+      localStorage.setItem('hasVisitedBefore', 'true');
+    } else {
+      // Subsequent visits - randomly select a phrase
+      text = phrases[Math.floor(Math.random() * phrases.length)];
+    }
+    
     const typedTextSpan = document.querySelector(".typed-text");
-    const cursorSpan = document.querySelector(".cursor");
     const typingDelay = 100; // Delay between each character
     let charIndex = 0;
 
