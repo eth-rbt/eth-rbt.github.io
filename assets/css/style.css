@@ -685,3 +685,17 @@ h6,
   50% { opacity: 0; }
 }
 
+/* Mobile: single column layout */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr !important;
+    gap: 15px;
+  }
+  
+  .grid-item.item-large,
+  .grid-item.item-medium {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+}
+
