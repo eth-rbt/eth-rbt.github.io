@@ -140,11 +140,11 @@
   // Typing animation with random phrases
   window.addEventListener('load', () => {
     const phrases = [
-      "how intelligence behaves beyond screens.",
-      "innovative interactions.",
+      "physcial forms for intelligence.",
       "products that grow with users.",
-      "adaptive objects.",
-      "personalized, playful moments."
+      "culturally situated intelligent systems.",
+      "personalized, playful moments.",
+      "adatptive smart objects."
     ];
     
     // Check if this is the first visit
